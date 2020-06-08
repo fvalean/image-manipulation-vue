@@ -1,11 +1,17 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <AppHeader></AppHeader>
+  </div>
 </template>
 
 <script>
+import AppHeader from './components/AppHeader';
+
 export default {
-  name: "App",
-  components: {}
+  name: 'App',
+  components: {
+    AppHeader,
+  },
 };
 </script>
 
@@ -16,6 +22,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
