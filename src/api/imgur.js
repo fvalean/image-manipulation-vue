@@ -19,6 +19,11 @@ export default {
     //window.location = `${ROOT_URL}/oauth2/authorize?${qs.stringify(querystring)}`;
   },
   fetchImages(token) {
+    return {
+      data: {
+        data: [{ link: 'https://s3.amazonaws.com/marquee-test-akiaisur2rgicbmpehea/E5m264ttSKBxSDsotuzw_lego.png' }],
+      },
+    };
     //TODO: uncomment below and comment above after making imgur accout
     /*
     return axios.get(`${ROOT_URL}/3/account/me/images`, {
