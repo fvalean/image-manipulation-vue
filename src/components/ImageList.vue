@@ -1,7 +1,7 @@
 
 <template>
   <div class>
-    <img v-for="image in allImages" :src="image.link" />
+    <img v-for="image in allImages" :key="image.link" :src="image.link" />
   </div>
 </template>
 
