@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import api from '../../api/imgur';
 
 const state = {
@@ -14,6 +15,9 @@ const actions = {
     const response = await api.fetchImages(token);
     commit('setImages', response.data.data);
   },
+  async uploadImages({ commit }, images) {
+    console.log(images);
+  },
 };
 
 const mutations = {
@@ -28,3 +32,5 @@ export default {
   actions,
   mutations,
 };
+
+/* eslint-disable no-unused-vars */
